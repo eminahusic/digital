@@ -3,7 +3,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.png') no-repeat left top fixed;
+    background: url('Background.png') no-repeat left top fixed;
     background-size: cover;
     color: #FFFFFF; /* Default text color for dark theme */
 }
