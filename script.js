@@ -364,12 +364,18 @@ window.onload = function() {
 
 // Open Contact Modal
 function openContactModal() {
-    document.getElementById('contactModal').style.display = 'block';
+    const modal = document.getElementById('contactModal');
+    if (modal) {
+        modal.style.display = 'flex'; // Use 'flex' to properly center the content
+    }
 }
 
 // Close Contact Modal
 function closeContactModal() {
-    document.getElementById('contactModal').style.display = 'none';
+    const modal = document.getElementById('contactModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
 }
 
 // Close modal when clicking outside of it
@@ -379,6 +385,7 @@ window.onclick = function(event) {
         modal.style.display = 'none';
     }
 };
+
 
 // Show Quiz
 function showQuiz(quizId) {
